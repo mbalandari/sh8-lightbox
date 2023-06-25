@@ -68,7 +68,9 @@ a.clicked {
 
 .modal-close {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
     color: #fff;
+    top: 0;
+    right: 0;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
 }
