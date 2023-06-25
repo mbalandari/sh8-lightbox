@@ -57,6 +57,10 @@ a.clicked {
     border: 0.3rem solid #ff4141;
 }
 
+.modal {
+    display: none;
+}
+
 .modal-background {
     position: fixed;
     top: 0;
