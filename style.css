@@ -10,6 +10,7 @@ html {
 img {
     width: 100%;
     max-width: 100%;
+    display: block;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     line-height: 1.5;
     color: #444;
     margin: 3.1rem auto 6.2rem auto;
-    min-width: 50rem;
+    max-width: 50rem;
     text-align: center;
 }
 
@@ -38,18 +39,15 @@ h2 {
     margin: 0;
 }
 
-article {
-    overflow: hidden;
+.photos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 0 1.25rem;
 }
 
 a {
-    float: left;
-    width: 24.4rem;
-    margin: 0.3rem;
-    border: 0.3rem solid transparent;
+    width: 50%;
+    padding: 0.6rem;
     transition: border-color 0.5s;
 }
   
@@ -83,6 +81,15 @@ a.clicked {
     position: fixed;
     top: 50%;
     left: 50%;
-    max-width: 47.5rem;
+    max-width: 46.3rem;
+    width: 90%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 520px) {
+    .photos a {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 1.25rem;
+    }
 }
